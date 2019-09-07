@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libexec.AspnetCore.EnvironmentHeaders", "Libexec.AspnetCore.EnvironmentHeaders\Libexec.AspnetCore.EnvironmentHeaders.csproj", "{59E0141A-D5A6-4656-9A33-E0EC2459D9BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59E0141A-D5A6-4656-9A33-E0EC2459D9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E0141A-D5A6-4656-9A33-E0EC2459D9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E0141A-D5A6-4656-9A33-E0EC2459D9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E0141A-D5A6-4656-9A33-E0EC2459D9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43F240B6-2382-449B-8287-48A01F0E562F}
+	EndGlobalSection
+EndGlobal

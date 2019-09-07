@@ -1,2 +1,5 @@
-# Libexec.AspnetCore.EnvironmentHeaders
-ASP.NET Core middleware for adding environment information to response headers
+# EnvironmentHeaders Middleware
+
+## License
+
+Released under the [MIT License](http://rnelson.mit-license.org).
