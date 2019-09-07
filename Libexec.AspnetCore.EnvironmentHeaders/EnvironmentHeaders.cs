@@ -7,7 +7,7 @@ namespace Libexec.AspnetCore.EnvironmentHeaders
     {
         internal static IDictionary<string, string> BuildHeaderDictionary()
         {
-            const string prefix = "X-EnvHeaders-";
+            const string prefix = "X-EnvHeaders";
 
             var result = new Dictionary<string, string>
             {
