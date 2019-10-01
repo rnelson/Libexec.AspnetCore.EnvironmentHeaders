@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 namespace Libexec.AspnetCore.EnvironmentHeaders
@@ -43,8 +42,8 @@ namespace Libexec.AspnetCore.EnvironmentHeaders
         private async Task HandleHeaderInjection(HttpContext context)
         {
             var headers = EnvironmentHeaders.BuildHeaderDictionary();
-            foreach (var pair in headers)
-                context.Response.Headers.Add(pair.Key, pair.Value);
+            foreach (var (key, value) in headers)
+                context.Response.Headers.Add(key, value);
 
             await next(context);
         }
