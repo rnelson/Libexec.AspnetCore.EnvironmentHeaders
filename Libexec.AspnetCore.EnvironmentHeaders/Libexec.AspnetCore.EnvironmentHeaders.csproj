@@ -1,18 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.1;netcoreapp3.0;netcoreapp3.1;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <LangVersion>11</LangVersion>
     <Authors>Ross Nelson</Authors>
     <Company />
-    <Copyright>Copyright (C) 2020 Ross Nelson</Copyright>
+    <Copyright>Copyright (C) 2023 Ross Nelson</Copyright>
     <PackageProjectUrl>https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders</RepositoryUrl>
     <Description>Middleware to add environment information to response headers.</Description>
-    <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>Updated dependencies. Added additional target frameworks.</PackageReleaseNotes>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageReleaseNotes>Updated dependencies. Modify target frameworks.</PackageReleaseNotes>
+    <PackageVersion>1.0.2</PackageVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
