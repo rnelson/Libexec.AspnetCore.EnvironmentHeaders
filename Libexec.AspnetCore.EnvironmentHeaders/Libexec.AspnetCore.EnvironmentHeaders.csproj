@@ -11,6 +11,7 @@
     <RepositoryUrl>https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders</RepositoryUrl>
     <Description>Middleware to add environment information to response headers.</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>Updated dependencies. Modify target frameworks.</PackageReleaseNotes>
     <PackageVersion>1.0.2</PackageVersion>
     <AssemblyVersion>1.0.2</AssemblyVersion>
@@ -22,10 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <None Include="..\LICENSE" Pack="true" PackagePath="\"/>
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
