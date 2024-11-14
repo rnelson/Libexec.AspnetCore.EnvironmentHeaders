@@ -6,16 +6,16 @@
     <LangVersion>default</LangVersion>
     <Authors>Ross Nelson</Authors>
     <Company />
-    <Copyright>Copyright (C) 2023 Ross Nelson</Copyright>
+    <Copyright>Copyright (C) 2024 Ross Nelson</Copyright>
     <PackageProjectUrl>https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders</PackageProjectUrl>
     <RepositoryUrl>https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders</RepositoryUrl>
     <Description>Middleware to add environment information to response headers.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>Static analysis fixes.</PackageReleaseNotes>
-    <PackageVersion>1.0.3</PackageVersion>
-    <AssemblyVersion>1.0.3</AssemblyVersion>
-    <FileVersion>1.0.3</FileVersion>
+    <PackageReleaseNotes>Updated ASP.NET Core dependency, updated supported target frameworks.</PackageReleaseNotes>
+    <PackageVersion>1.0.4</PackageVersion>
+    <AssemblyVersion>1.0.4</AssemblyVersion>
+    <FileVersion>1.0.4</FileVersion>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
