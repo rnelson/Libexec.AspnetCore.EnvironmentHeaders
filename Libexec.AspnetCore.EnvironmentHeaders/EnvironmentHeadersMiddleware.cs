@@ -20,7 +20,7 @@ namespace Libexec.AspnetCore.EnvironmentHeaders;
 [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
 public class EnvironmentHeadersMiddleware
 {
-    private readonly RequestDelegate next;
+    private readonly RequestDelegate _next;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="EnvironmentHeadersMiddleware"/> class.
@@ -28,7 +28,7 @@ public class EnvironmentHeadersMiddleware
     /// <param name="next">The next <see cref="RequestDelegate"/> to use.</param>
     public EnvironmentHeadersMiddleware(RequestDelegate next)
     {
-        this.next = next;
+        _next = next;
     }
 
     public async Task InvokeAsync(HttpContext context)
@@ -36,7 +36,7 @@ public class EnvironmentHeadersMiddleware
         var config = EnvironmentHeadersConfiguration.Current;
         if (!config.EnvironmentHeadersEnabled)
         {
-            await next(context);
+            await _next(context);
             return;
         }
 
@@ -47,8 +47,8 @@ public class EnvironmentHeadersMiddleware
     {
         var headers = EnvironmentHeaders.BuildHeaderDictionary().ToArray();
         foreach (var (key, value) in headers)
-            context.Response.Headers.Add(key, value);
+            context.Response.Headers[key] = value;
 
-        await next(context);
+        await _next(context);
     }
 }

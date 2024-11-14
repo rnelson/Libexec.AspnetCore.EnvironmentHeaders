@@ -23,4 +23,4 @@ app.MapGet("/", ctx => ctx.Response.WriteAsync($"Hello from {ctx.Request.Path}")
 app.Run();
 
 [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
-public partial class Program { }
+public partial class Program;
