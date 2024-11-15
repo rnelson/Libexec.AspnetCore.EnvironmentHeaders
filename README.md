@@ -1,6 +1,6 @@
 # EnvironmentHeaders Middleware
 
-![Build status](https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders/actions/workflows/dotnet.yml/badge.svg) ![License](https://img.shields.io/github/license/rnelson/Libexec.AspnetCore.EnvironmentHeaders%20) ![NuGet](https://img.shields.io/nuget/v/Libexec.AspnetCore.EnvironmentHeaders)
+![Build status](https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders/actions/workflows/dotnet.yml/badge.svg) ![License](https://img.shields.io/github/license/rnelson/Libexec.AspnetCore.EnvironmentHeaders%20) ![NuGet](https://img.shields.io/nuget/v/Libexec.AspnetCore.EnvironmentHeaders) [deps.dev](https://deps.dev/nuget/libexec.aspnetcore.environmentheaders)
 
 The EnvironmentHeaders middleware is a small ASP.NET Core middleware package that adds [a few response headers](https://github.com/rnelson/Libexec.AspnetCore.EnvironmentHeaders/blob/main/Libexec.AspnetCore.EnvironmentHeaders/EnvironmentHeaders.cs#L14-L19) to every request to aid in troubleshooting.
 
