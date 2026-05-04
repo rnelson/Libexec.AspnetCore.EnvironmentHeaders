@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Libexec.AspnetCore.EnvironmentHeaders;
+﻿using Libexec.AspnetCore.EnvironmentHeaders;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
@@ -21,6 +20,3 @@ app.UseEnvironmentHeaders();
 app.MapGet("/", ctx => ctx.Response.WriteAsync($"Hello from {ctx.Request.Path}"));
 
 app.Run();
-
-[SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
-public partial class Program;

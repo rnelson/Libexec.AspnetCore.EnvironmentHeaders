@@ -3,14 +3,9 @@ using Xunit;
 
 namespace Libexec.AspnetCore.EnvironmentHeaders.Tests;
 
-public class HeaderTests : IClassFixture<WebApplicationFactory<Program>>
+public class HeaderTests(WebApplicationFactory<Program> factory) : IClassFixture<WebApplicationFactory<Program>>
 {
-	private readonly WebApplicationFactory<Program> _factory;
-
-	public HeaderTests(WebApplicationFactory<Program> factory)
-	{
-		_factory = factory ?? throw new ArgumentNullException(nameof(factory));
-	}
+	private readonly WebApplicationFactory<Program> _factory = factory ?? throw new ArgumentNullException(nameof(factory));
 
 	[Theory]
 	[InlineData("/")]
